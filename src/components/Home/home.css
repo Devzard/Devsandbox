@@ -1,0 +1,42 @@
+:root {
+  --editor-width: 50%;
+  --preview-width: 50%;
+  --home-screen-visibilit: visible;
+}
+.home-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home-menu-bar {
+  width: 3rem;
+}
+
+.home-tabs {
+  height: 100%;
+  background-color: #272822;
+  color: white;
+}
+.home-tabs > ul {
+  border: none;
+}
+.home-active-tab {
+  background-color: #474a3e;
+}
+
+.home-editor-container {
+  height: 100%;
+  visibility: var(--home-screen-visibility);
+  width: var(--editor-width);
+  transition: all 1.5s ease;
+}
+
+.home-preview {
+  transition: all 1.5s ease;
+  height: 100%;
+  width: var(--preview-width);
+  margin: 0;
+  padding: 0;
+}
